@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-assessment-week1",
+  "version": "1.0.0",
+  "description": "assignment node js week 1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
