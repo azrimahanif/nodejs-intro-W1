@@ -5,19 +5,15 @@ const user = require('./controller/get/userController');
 const app = express();
 const PORT = 3000;
 
-// // create route /
+app.set("view engine", "ejs");
+
 // app.get("/", (req, res) => {
-//   res.writeHead(200, { "Content-Type": "text/html" });
-//   res.send("<h1>Home</h1>");
+//   // Data to pass to the template (replace with your own data)
+//   res.sendFile(__dirname + "/views/index.html");
 // });
 
-// app.use((req, res) => {
-//   res.writeHead(404, { "Content-Type": "text/html" });
-//   res.send("<h1>Not found</h1>");
-// });
 
-// app.use(home);
-app.use(user);
+app.use(home)
 app.use(express.static('public'));
 app.listen(PORT, () => {
   console.log(`Server is started at port ${PORT}`);
