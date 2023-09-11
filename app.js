@@ -17,7 +17,7 @@ const PORT = 3000;
 // });
 
 // app.use(home);
-// app.use(user);
+app.use(user);
 app.use(express.static('public'));
 app.listen(PORT, () => {
   console.log(`Server is started at port ${PORT}`);
